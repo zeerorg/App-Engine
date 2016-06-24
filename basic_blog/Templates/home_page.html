@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% block content %}
+
+{% for post in posts %}
+    <h2>{{post.subject}}:
+    {{post.created.strftime('%d %b, %Y')}}</h2>
+    <hr>
+    <pre>{{post.content}}</pre>
+    <!-- <h3>{{post.key().id()%10000}}</h3> -->
+{% endfor %}
+
+{% endblock %}

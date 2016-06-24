@@ -1,0 +1,21 @@
+<form method="post">
+    <h2>ASCII Artwork</h2>
+    <label>
+        Title<br>
+        <input name="title" value="{{title}}"><br>
+    </label>
+    <label>
+        Artwork<br>
+        <textarea name="ascii">{{ascii}}</textarea><br>
+    </label>
+    <input type="submit">
+    <div style="color: red">{{error}}</div>
+</form>
+<br>
+<br>
+
+{% for art in artwork %}
+    <hr>
+    <h2>{{art.title}}</h2>
+    <pre>{{art.ascii}}</pre>
+{% endfor %}
