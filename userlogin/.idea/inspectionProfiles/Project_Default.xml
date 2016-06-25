@@ -7,6 +7,10 @@
           <option value="webapp2" />
           <option value="jinja2" />
           <option value="main.google" />
+          <option value="pageHandle.google" />
+          <option value="form.google" />
+          <option value="usefulFunctions.google" />
+          <option value="login.google" />
         </list>
       </option>
     </inspection_tool>
