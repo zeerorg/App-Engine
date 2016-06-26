@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Bootstrap</title>
+    <!-- sets IE engine to be latest -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        .jumbotron{
+            background-color:#2E2D88;
+            color:white;
+        }
+        /* Adds borders for tabs */
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class='page-header'>
+        <h1>Header of page</h1>
+    </div>
+</div>
+<div class='jumbotron'>
+    <p>This is a jumbotron class inside this shit</p>
+    
+    <a href='#' class='btn btn-primary'>Primary</a>
+    <button class='btn btn-sucess btn-xs'>Success</button>
+    <button class='btn btn-lg btn-danger'>Danger</button>
+    <button class='btn btn-info btn-lg'>Info L</button>
+    <button class='btn btn-warning disabled'>Disabled warning</button>
+</div>
+
+<button class='btn btn-link'>link type</button>
+<div class='btn-group btn-group-info'>
+    <button class='btn btn-default'>With default</button>
+    <button class='btn'>Without default</button>
+    <button class='btn btn-danger'>Complimentary danger</button>
+</div>
+
+<br><br>Without btn-group-info:(No change)<br>
+<div class='btn-group'>
+    <button class='btn btn-default'>With default</button>
+    <button class='btn btn-lg'>Without default</button>
+    <button class='btn btn-danger'>Complimentary danger</button>
+</div>
+
+<div class='jumbotron'>
+    <h1>Grids</h1>
+</div>
+
+<div class='container'>
+    <div class='row'>        
+        <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+            <h3>Java</h3>
+            <p>Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented,[14] and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA),[15] meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.[16] Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use,[17][18][19][20] particularly for client-server web applications, with a reported 9 million developers.[21] Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.</p>
+        </div>
+        
+        <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+            <h3>Python</h3>
+            <p>Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.</p>
+        </div>
+        
+        <div class='clearfix visible-sm'></div>
+        
+        <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+            <h3>LolCode</h3>
+            <p>LOLCODE is an esoteric programming language inspired by lolspeak, the language expressed in examples of the lolcat Internet meme.[1] The language was created in 2007 by Adam Lindsay, researcher at the Computing Department of Lancaster University.The language is not clearly defined in terms of operator priorities and correct syntax, but several functioning interpreters and compilers exist. One interpretation of the language has been proven Turing-complete.[4]</p>
+        </div>
+        
+        <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+            <h3>C++</h3>
+            <p>It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.[5] C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[5] including desktop applications, servers (e.g. e-commerce, web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes).[6] C++ is a compiled language, with implementations of it available on many platforms and provided by various organizations, including the Free Software Foundation (FSF's GCC), LLVM, Microsoft, Intel and IBM.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class='page-header'>
+    <h1>Grid with unequal column</h1>
+</div>
+
+<div class='container'>
+    <div class='row'>
+        <div class='col-lg-6 col-md-6 col-sm-4 col-xs-12'>
+            <h2><a href='#PyIntro' data-toggle='collapse'>Python</a></h2>
+            <p>Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.[23][24] Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java.[25][26] The language provides constructs intended to enable clear programs on both a small and large scale.[27]Python supports multiple programming paradigms, including object-oriented, imperative and functional programming or procedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive standard library.[28]
+            <div class='collapse' id='PyIntro'>Python interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems.Using third-party tools, such as Py2exe or Pyinstaller,[29] Python code can be packaged into stand-alone executable programs for some of the most popular operating systems, so Python-based software can be distributed to, and used on, those environments with no need to install a Python interpreter.CPython, the reference implementation of Python, is free and open-source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.</div></p>
+        </div>
+        
+        <div class='col-lg-3 col-md-6 col-sm-4 col-xs-12'>
+            <h4>History</h4>
+            <p>Python was conceived in the late 1980s,[30] and its implementation began in December 1989[31] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL)[32] capable of exception handling and interfacing with the operating system Amoeba.[7] Van Rossum is Python's principal author, and his continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, benevolent dictator for life (BDFL).</p>
+        </div>
+        
+        <div class='col-lg-3 col-md-12 col-sm-4 col-xs-12'>
+            <h4><a href='#ExCode' data-toggle='collapse'>Example code</a></h4>
+            <div id='ExCode' class='collapse'>
+                <code>
+                    <pre>
+                    # Python Program to find the area of triangle
+                    # Three sides of the triangle a, b and c are provided by the user
+
+                    a = float(input('Enter first side: '))
+                    b = float(input('Enter second side: '))
+                    c = float(input('Enter third side: '))
+
+                    # calculate the semi-perimeter
+                    s = (a + b + c) / 2
+
+                    # calculate the area
+                    area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+                    print('The area of the triangle is %0.2f' %area)
+                    </pre>
+                </code>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class='container'>
+    <p class='well hidden-lg hidden-xs'>
+        Won't show in large screen.
+    </p>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
